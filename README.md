@@ -59,7 +59,32 @@ The objective was to analyze shipment operations, carrier performance, shipping 
 ![Dashboard](Dashboard.jpg)
 
 ---
+## SQL Analysis
 
+The project database was built in Oracle SQL and populated with simulated shipment records.
+
+Key analyses included:
+
+* Carrier performance evaluation
+* Delay rate calculation
+* Shipping cost analysis
+* Route-level performance analysis
+* Product category insights
+
+Example Query:
+
+```sql
+SELECT carrier,
+       COUNT(*) AS total_shipments,
+       ROUND(AVG(shipping_cost), 2) AS avg_cost,
+       SUM(delayed) AS delayed_count,
+       ROUND(SUM(delayed) / COUNT(*) * 100, 1) AS delay_rate_pct
+FROM shipments
+GROUP BY carrier
+ORDER BY delay_rate_pct DESC;
+```
+## Oracle Preview
+![Oracle sql](Oracle sql.jpg)
 ## Author
 
 Hamidreza Asiyaeimoghadam
