@@ -56,7 +56,7 @@ The objective was to analyze shipment operations, carrier performance, shipping 
 
 ## Dashboard Preview
 
-![Dashboard](dashboard.png)
+![Dashboard](dashboard.jpg)
 
 ---
 
