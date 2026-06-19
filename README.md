@@ -84,7 +84,8 @@ GROUP BY carrier
 ORDER BY delay_rate_pct DESC;
 ```
 ## Oracle Preview
-![Oracle sql](Oracle sql.jpg)
+![Oraclesql](Oraclesql.jpg)
+
 ## Author
 
 Hamidreza Asiyaeimoghadam
